@@ -1,0 +1,4 @@
+#!/bin/bash
+echo Librarian: $0 $*
+echo "int libx() { return 0; }" > tmp.c && gcc -c tmp.c && ar rc $1 tmp.o
+rm tmp.c tmp.o
